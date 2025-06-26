@@ -1,0 +1,7 @@
+.cardEffect{
+  transition: 0.3s !important;
+}
+.cardEffect:hover{
+scale: 1.04;
+rotate: 1deg;
+}

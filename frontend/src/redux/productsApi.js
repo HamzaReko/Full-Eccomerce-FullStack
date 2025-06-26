@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 // get all data
 export const productsApi = createApi({
   reducerPath: "productsApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://full-eccomerce-fullstack-production.up.railway.app/" }),
   endpoints: (builder) => ({
     getproductsByName: builder.query({
       query: (name) => `products`,
@@ -14,7 +14,7 @@ export const productsApi = createApi({
 // get only one product
 export const productApi = createApi({
   reducerPath: "productApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://full-eccomerce-fullstack-production.up.railway.app/" }),
   endpoints: (builder) => ({
     getproductByName: builder.query({
       query: (name) => `products/${name}`,
